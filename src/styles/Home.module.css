@@ -1,0 +1,13 @@
+.bodyb{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 100vh;
+}
+.body{
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(213, 96%, 18%);
+}

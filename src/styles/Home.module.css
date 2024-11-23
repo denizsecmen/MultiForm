@@ -1,13 +1,32 @@
-.bodyb{
+.bodyb {
   margin: 0;
   padding: 0;
   width: 100vw;
   min-height: 100vh;
 }
-.body{
+.body {
   width: 100vw;
   min-height: 100vh;
   margin: 0;
   padding: 0;
   background-color: hsl(206, 94%, 87%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  width: 70vw;
+  height: 80vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 10px;
+}
+.progress {
+  background-image: url('../images/bg-sidebar-desktop.svg');
+  width: 35%;
+  height: 95%;
+  z-index: -1;
 }

@@ -1,5 +1,5 @@
-import Head from "next/head";
-import styles from "@/styles/Home.module.css";
+import Head from 'next/head';
+import styles from '@/styles/Home.module.css';
 export default function Home() {
   return (
     <>
@@ -10,7 +10,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.body}>
-        
+        <div className={styles.form}>
+          <div className={styles.progress}></div>
+          <div className={styles.form}></div>
+        </div>
       </div>
     </>
   );

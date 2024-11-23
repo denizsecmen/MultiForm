@@ -1,0 +1,18 @@
+.progressSign {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.circle {
+  width: 54px;
+  height: 54px;
+  border: 3px solid white;
+  color: white;
+  font-weight: bolder;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

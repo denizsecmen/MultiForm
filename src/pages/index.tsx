@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import styles from '@/styles/Home.module.css';
+import Progress from '@/components/progress/progress';
 export default function Home() {
   return (
     <>
@@ -11,8 +12,10 @@ export default function Home() {
       </Head>
       <div className={styles.body}>
         <div className={styles.form}>
-          <div className={styles.progress}></div>
-          <div className={styles.form}></div>
+          <div className={styles.progress}>
+            <Progress />
+          </div>
+          <div className={styles.main}></div>
         </div>
       </div>
     </>

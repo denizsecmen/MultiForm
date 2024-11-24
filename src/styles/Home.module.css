@@ -3,6 +3,7 @@
   padding: 0;
   width: 100vw;
   min-height: 100vh;
+  font-family: 'Ubuntu';
 }
 .body {
   width: 100vw;
@@ -15,8 +16,8 @@
   align-items: center;
 }
 .form {
-  width: 70vw;
-  height: 80vh;
+  width: 51vw;
+  height: 75vh;
   background-color: white;
   display: flex;
   justify-content: center;

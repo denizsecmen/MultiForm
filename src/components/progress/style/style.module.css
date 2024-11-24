@@ -2,6 +2,10 @@
   font-family: 'Ubuntu';
   src: url('../../../fonts/Ubuntu-Bold.ttf');
 }
+@font-face {
+  font-family: 'Ubuntu-regular';
+  src: url('../../../fonts/Ubuntu-Regular.ttf');
+}
 .progressSign {
   height: 60%;
   display: flex;
@@ -11,8 +15,8 @@
 }
 .circle {
   font-family: 'Ubuntu';
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border: 3px solid white;
   color: white;
   font-weight: bolder;
@@ -21,4 +25,17 @@
   justify-content: center;
   align-items: center;
   font-size: 25px;
+  margin-right: 10px;
+}
+.circleColored {
+  background-color: hsl(206, 94%, 87%);
+  color: black;
+}
+.stepbox {
+  color: white;
+  display: flex;
+  font-family: 'Ubuntu-regular';
+  font-weight: 10 !important;
+  width: 60%;
+  align-items: center;
 }

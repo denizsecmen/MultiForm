@@ -2,10 +2,27 @@ import Head from 'next/head';
 import styles from '@/styles/Home.module.css';
 import Progress from '@/components/progress/progress';
 import Component1 from '@/components/mainForm/Form1/component1';
+import Component2 from '@/components/mainForm/Form2/component2';
+import Component3 from '@/components/mainForm/Form3/component3';
+import Component4 from '@/components/mainForm/Form4/component4';
+import Component5 from '@/components/mainForm/Form5/component5';
 import context from '@/context/context';
 import { useState } from 'react';
 export default function Home() {
   let [val, chval] = useState('1');
+  function changeMain(order: String) {
+    if (val == '1') {
+      return <Component1 />;
+    } else if (val == '2') {
+      return <Component2 />;
+    } else if (val == '3') {
+      return <Component3 />;
+    } else if (val == '4') {
+      return <Component4 />;
+    } else {
+      return <Component5 />;
+    }
+  }
   return (
     <>
       <Head>
@@ -20,8 +37,7 @@ export default function Home() {
             <div className={styles.progress}>
               <Progress />
             </div>
-            <div className={styles.main}></div>
-            <Component1 />
+            <div className={styles.main}>{changeMain(val)}</div>
           </div>
         </div>
       </context.Provider>

@@ -5,7 +5,6 @@ export default function Progress() {
   let [val, t] = useContext(context);
   return (
     <div className={styles.progressSign}>
-      {val}
       <div className={styles.stepbox}>
         <div
           className={`${styles.circle} ${

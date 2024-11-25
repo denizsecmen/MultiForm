@@ -15,7 +15,7 @@ export default function Progress() {
         </div>
         <div className={styles.info}>
           <div className={styles.step}>STEP 1</div>
-          <div className={styles.info}>Your info</div>
+          <div className={styles.infos}>Your info</div>
         </div>
       </div>
       <div className={styles.stepbox}>
@@ -28,7 +28,7 @@ export default function Progress() {
         </div>
         <div className={styles.info}>
           <div className={styles.step}>STEP 2</div>
-          <div className={styles.info}>Select plan</div>
+          <div className={styles.infos}>Select plan</div>
         </div>
       </div>
       <div className={styles.stepbox}>
@@ -41,7 +41,7 @@ export default function Progress() {
         </div>
         <div className={styles.info}>
           <div className={styles.step}>STEP 3</div>
-          <div className={styles.info}>Add-ons</div>
+          <div className={styles.infos}>Add-ons</div>
         </div>
       </div>
       <div className={styles.stepbox}>
@@ -54,7 +54,7 @@ export default function Progress() {
         </div>
         <div className={styles.info}>
           <div className={styles.step}>STEP 4</div>
-          <div className={styles.info}>Summary</div>
+          <div className={styles.infos}>Summary</div>
         </div>
       </div>
     </div>

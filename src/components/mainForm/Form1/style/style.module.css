@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../../../../fonts/Ubuntu-Medium.ttf');
+}
+.component {
+  font-size: 18px;
+  font-family: 'Ubuntu';
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  padding: 10px;
+}

@@ -3,8 +3,8 @@
   src: url('../../../fonts/Ubuntu-Bold.ttf');
 }
 @font-face {
-  font-family: 'Ubuntu-regular';
-  src: url('../../../fonts/Ubuntu-Regular.ttf');
+  font-family: 'Ubuntu-Light';
+  src: url('../../../fonts/Ubuntu-Light.ttf');
 }
 .progressSign {
   height: 60%;
@@ -35,8 +35,10 @@
 .stepbox {
   color: white;
   display: flex;
-  font-family: 'Ubuntu-regular';
-  font-weight: 10 !important;
+  font-family: 'Ubuntu-Light';
+  font-weight: 100 !important;
   width: 60%;
-  align-items: center;
+}
+.infos {
+  font-family: 'Ubuntu';
 }

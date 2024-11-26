@@ -18,7 +18,14 @@ export default function Component1() {
         <input type="tel" className={styles.input}></input>
       </div>
       <div className={styles.next}>
-        <button className={styles.button}>Next Page</button>
+        <button
+          className={styles.button}
+          onClick={() => {
+            chprogress('2');
+          }}
+        >
+          Next Page
+        </button>
       </div>
     </div>
   );

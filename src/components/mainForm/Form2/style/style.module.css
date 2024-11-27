@@ -1,0 +1,17 @@
+.component {
+  font-size: 18px;
+  font-family: 'Ubuntu';
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 95%;
+  padding-top: 5%;
+  margin-left: calc(100% - 95%);
+}
+.title {
+  font-size: 28px;
+}
+.subtitle {
+  font-size: 17px;
+  color: gray;
+}

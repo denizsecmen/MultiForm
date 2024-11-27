@@ -1,5 +1,8 @@
+import { useContext } from 'react';
+import context from '@/context/context';
 import styles from './style/style.module.css';
 export default function component2() {
+  let [progress, chprogress] = useContext(context);
   return (
     <div className={styles.component}>
       <div className={styles.headers}>
@@ -10,19 +13,36 @@ export default function component2() {
       </div>
       <div className={styles.selections}>
         <div className={styles.selection}>
-          Online service Access to multiplayer games +$1/mo
+          <div className={styles.packet}>Arcade</div>
+          <div className={styles.price}> $9/mo</div>
         </div>
-        <div className={styles.selection2}>
-          Larger storage Extra 1TB of cloud save +$2/mo
+        <div className={styles.selection}>
+          <div className={styles.packet}>Advanced</div>
+          <div className={styles.price}>$12/mo</div>
         </div>
-        <div className={styles.selection3}>
-          Customizable Profile Custom theme on your profile +$2/mo
+        <div className={styles.selection}>
+          <div className={styles.packet}>Advanced Pro</div>
+          <div className={styles.price}>$15/mo</div>
         </div>
       </div>
       <div className={styles.switch}></div>
       <div className={styles.buttons}>
-        <button className={styles.back}>Go Back</button>
-        <button className={styles.next}>Next Step</button>
+        <button
+          className={styles.back}
+          onClick={() => {
+            chprogress('1');
+          }}
+        >
+          Go Back
+        </button>
+        <button
+          className={styles.next}
+          onClick={() => {
+            chprogress('3');
+          }}
+        >
+          Next Step
+        </button>
       </div>
     </div>
   );

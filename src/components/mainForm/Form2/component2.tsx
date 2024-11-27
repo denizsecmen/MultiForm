@@ -2,9 +2,11 @@ import styles from './style/style.module.css';
 export default function component2() {
   return (
     <div className={styles.component}>
-      <div className={styles.title}> Online service</div>
-      <div className={styles.subtitle}>
-        Add-ons help enhance your gaming experience.
+      <div className={styles.headers}>
+        <div className={styles.title}> Online service</div>
+        <div className={styles.subtitle}>
+          Add-ons help enhance your gaming experience.
+        </div>
       </div>
       <div className={styles.selections}>
         <div className={styles.selection}>
@@ -16,8 +18,11 @@ export default function component2() {
         <div className={styles.selection3}>
           Customizable Profile Custom theme on your profile +$2/mo
         </div>
-        <div className={styles.switch}></div>
-        <div className={styles.buttons}></div>
+      </div>
+      <div className={styles.switch}></div>
+      <div className={styles.buttons}>
+        <button className={styles.back}>Go Back</button>
+        <button className={styles.next}>Next Step</button>
       </div>
     </div>
   );

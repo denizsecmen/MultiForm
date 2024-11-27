@@ -42,6 +42,11 @@
 .input:focus {
   border: 2px solid darkblue !important;
 }
+.header {
+  height: 20%;
+  width: 100%;
+  background-color: aqua;
+}
 .button {
   width: 120px;
   height: 40px;

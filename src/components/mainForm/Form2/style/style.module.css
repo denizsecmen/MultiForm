@@ -3,6 +3,7 @@
   font-family: 'Ubuntu';
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 80%;
   height: 95%;
   padding-top: 5%;
@@ -14,4 +15,37 @@
 .subtitle {
   font-size: 17px;
   color: gray;
+}
+.selections {
+  display: flex;
+  justify-content: space-around;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.next {
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 0%;
+  background-color: hsl(213, 96%, 18%);
+  color: white;
+  font-family: 'Ubuntu';
+  border-radius: 5px;
+}
+.back {
+  background-color: white;
+  font-size: 14px;
+  border: 0px;
+  font-family: 'Ubuntu';
+}
+.input:focus {
+  border: 2px solid darkblue !important;
+}
+.headers {
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }

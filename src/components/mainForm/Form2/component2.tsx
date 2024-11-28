@@ -1,6 +1,10 @@
 import { useContext } from 'react';
 import context from '@/context/context';
 import styles from './style/style.module.css';
+import Image from 'next/image';
+import arcade from '../../../images/icon-arcade.svg';
+import advanced from '../../../images/icon-advanced.svg';
+import pro from '../../../images/icon-pro.svg';
 export default function component2() {
   let [progress, chprogress] = useContext(context);
   return (
@@ -13,14 +17,17 @@ export default function component2() {
       </div>
       <div className={styles.selections}>
         <div className={styles.selection}>
+          <Image src={arcade} alt={''} />
           <div className={styles.packet}>Arcade</div>
           <div className={styles.price}> $9/mo</div>
         </div>
         <div className={styles.selection}>
+          <Image src={advanced} alt={''} />
           <div className={styles.packet}>Advanced</div>
           <div className={styles.price}>$12/mo</div>
         </div>
         <div className={styles.selection}>
+          <Image src={pro} alt={''} />
           <div className={styles.packet}>Advanced Pro</div>
           <div className={styles.price}>$15/mo</div>
         </div>

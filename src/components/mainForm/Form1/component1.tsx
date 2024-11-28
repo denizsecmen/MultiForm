@@ -24,7 +24,7 @@ export default function Component1() {
             chprogress('2');
           }}
         >
-          Next Page
+          Next Step
         </button>
       </div>
     </div>

@@ -17,18 +17,18 @@ export default function component2() {
       </div>
       <div className={styles.selections}>
         <div className={styles.selection}>
-          <Image src={arcade} alt={''} />
+          <Image src={arcade} className={styles.image} alt={''} />
           <div className={styles.packet}>Arcade</div>
           <div className={styles.price}> $9/mo</div>
         </div>
         <div className={styles.selection}>
-          <Image src={advanced} alt={''} />
+          <Image src={advanced} className={styles.image} alt={''} />
           <div className={styles.packet}>Advanced</div>
           <div className={styles.price}>$12/mo</div>
         </div>
         <div className={styles.selection}>
-          <Image src={pro} alt={''} />
-          <div className={styles.packet}>Advanced Pro</div>
+          <Image src={pro} className={styles.image} alt={''} />
+          <div className={styles.packet}> Pro</div>
           <div className={styles.price}>$15/mo</div>
         </div>
       </div>

@@ -50,12 +50,17 @@
 }
 .selection {
   border-radius: 5px;
-  border: 1px solid black;
+  border: 1.5px solid black;
   height: 130px;
   width: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.selection:focus {
+  content: '' !important;
+  border: 1.5px solid blue !important;
+  background-color: hsl(240, 6%, 97%);
 }
 .image {
   margin-bottom: 10px;

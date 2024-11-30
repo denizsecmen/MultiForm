@@ -57,7 +57,7 @@
   flex-direction: column;
   align-items: center;
 }
-.selection:focus {
+.selectionActive {
   content: '' !important;
   border: 1.5px solid blue !important;
   background-color: hsl(240, 6%, 97%);
@@ -68,4 +68,8 @@
 }
 .selection > div {
   width: 80%;
+}
+.switch {
+  display: flex;
+  justify-content: center;
 }

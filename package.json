@@ -9,10 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.13.5",
+    "@emotion/styled": "^11.13.5",
+    "@mui/material": "^6.1.9",
     "next": "14.2.13",
     "react": "^18",
-    "react-dom": "^18",
-    "react-switch": "^7.0.0"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",

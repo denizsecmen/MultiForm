@@ -16,7 +16,7 @@ export default function component2() {
       <div className={styles.headers}>
         <div className={styles.title}> Online service</div>
         <div className={styles.subtitle}>
-          Add-ons help enhance your gaming experience.
+          You have the option of monthly or yearly billing.
         </div>
       </div>
       <div className={styles.selections}>

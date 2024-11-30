@@ -1,0 +1,34 @@
+.component {
+  font-size: 18px;
+  font-family: 'Ubuntu';
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  height: 100%;
+  background-color: aqua;
+  margin-left: calc(100% - 95%);
+}
+.title {
+  font-size: 28px;
+}
+.subtitle {
+  font-size: 17px;
+  color: gray;
+}
+.next {
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 0%;
+  background-color: hsl(213, 96%, 18%);
+  color: white;
+  font-family: 'Ubuntu';
+  border-radius: 5px;
+}
+.back {
+  background-color: white;
+  font-size: 14px;
+  border: 0px;
+  font-family: 'Ubuntu';
+}

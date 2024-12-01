@@ -10,7 +10,17 @@ export default function component4() {
         <div className={styles.subtitle}>
           Double-check everything looks OK before confirming.
         </div>
-        <div className={styles.checks}></div>
+        <div className={styles.checks}>
+          <div className={styles.check}>
+            <input type="checkbox" />
+          </div>
+          <div className={styles.check}>
+            <input type="checkbox" />
+          </div>
+          <div className={styles.check}>
+            <input type="checkbox" />
+          </div>
+        </div>
         <div className={styles.buttons}>
           <button
             className={styles.back}

@@ -39,3 +39,18 @@
   border: 0px;
   font-family: 'Ubuntu';
 }
+.checks {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  justify-content: space-around;
+}
+.check {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+}

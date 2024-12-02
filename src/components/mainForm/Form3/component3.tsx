@@ -1,11 +1,16 @@
 import context from '@/context/context';
 import styles from './style/style.module.css';
-import { useContext, useReducer } from 'react';
+import { useContext, useReducer, useState } from 'react';
 
 type State = [boolean, boolean, boolean];
 type Action = { type: number };
+interface Component3Props {
+  sendDataToParent: (data: number) => void; // Expecting a number to be sent to the parent
+}
 
-export default function Component3() {
+export const component3: React.FC<Component3Props> = function ({
+  sendDataToParent,
+}) {
   function changer(stat: State, action: Action): State {
     switch (action.type) {
       case 1:
@@ -20,7 +25,7 @@ export default function Component3() {
   }
   let [state, dispatch] = useReducer(changer, [false, false, false]);
   let [progress, chprogress] = useContext(context);
-
+  let [ccost, chhcost] = useState(0);
   return (
     <div className={styles.component}>
       <div className={styles.headers}>
@@ -30,7 +35,13 @@ export default function Component3() {
         </div>
       </div>
       <div className={styles.checks}>
-        <div className={styles.check} onClick={() => dispatch({ type: 1 })}>
+        <div
+          className={styles.check}
+          onClick={() => {
+            dispatch({ type: 1 });
+            chhcost(ccost + 1);
+          }}
+        >
           <div className={styles.f}>
             <input
               type="checkbox"
@@ -46,7 +57,13 @@ export default function Component3() {
           </div>
           <div className={styles.price}>+$1/mo</div>
         </div>
-        <div className={styles.check} onClick={() => dispatch({ type: 2 })}>
+        <div
+          className={styles.check}
+          onClick={() => {
+            dispatch({ type: 2 });
+            chhcost(ccost + 2);
+          }}
+        >
           <div className={styles.f}>
             <input
               type="checkbox"
@@ -60,7 +77,13 @@ export default function Component3() {
           </div>
           <div className={styles.price}>+$2/mo</div>
         </div>
-        <div className={styles.check} onClick={() => dispatch({ type: 3 })}>
+        <div
+          className={styles.check}
+          onClick={() => {
+            dispatch({ type: 3 });
+            chhcost(ccost + 2);
+          }}
+        >
           <div className={styles.f}>
             <input
               type="checkbox"
@@ -81,10 +104,16 @@ export default function Component3() {
         <button className={styles.back} onClick={() => chprogress('2')}>
           Go Back
         </button>
-        <button className={styles.next} onClick={() => chprogress('4')}>
+        <button
+          className={styles.next}
+          onClick={() => {
+            chprogress('4');
+            sendDataToParent(ccost);
+          }}
+        >
           Next Step
         </button>
       </div>
     </div>
   );
-}
+};

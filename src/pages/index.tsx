@@ -3,8 +3,8 @@ import styles from '@/styles/Home.module.css';
 import Progress from '@/components/progress/progress';
 import Component1 from '@/components/mainForm/Form1/component1';
 import { component2 as Component2 } from '@/components/mainForm/Form2/component2';
-import Component3 from '@/components/mainForm/Form3/component3';
-import Component4 from '@/components/mainForm/Form4/component4';
+import { component3 as Component3 } from '@/components/mainForm/Form3/component3';
+import { component4 as Component4 } from '@/components/mainForm/Form4/component4';
 import Component5 from '@/components/mainForm/Form5/component5';
 import context from '@/context/context';
 import { useState } from 'react';
@@ -20,9 +20,9 @@ export default function Home() {
     } else if (val == '2') {
       return <Component2 sendDataToParent={totalcalc} />;
     } else if (val == '3') {
-      return <Component3 />;
+      return <Component3 sendDataToParent={totalcalc} />;
     } else if (val == '4') {
-      return <Component4 />;
+      return <Component4 cost={tt} />;
     } else {
       return <Component5 />;
     }
@@ -40,7 +40,6 @@ export default function Home() {
           <div className={styles.form}>
             <div className={styles.progress}>
               <Progress />
-              {tt}
             </div>
             <div className={styles.main}>{changeMain(val)}</div>
           </div>

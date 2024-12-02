@@ -15,6 +15,10 @@
   font-size: 17px;
   color: gray;
 }
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
 .next {
   width: 120px;
   height: 40px;

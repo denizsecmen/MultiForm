@@ -6,11 +6,21 @@ import arcade from '../../../images/icon-arcade.svg';
 import advanced from '../../../images/icon-advanced.svg';
 import pro from '../../../images/icon-pro.svg';
 import { Stack, Switch, Typography } from '@mui/material';
-export default function component2() {
+interface Component2Props {
+  sendDataToParent: (data: number) => void; // Expecting a number to be sent to the parent
+}
+
+export const component2: React.FC<Component2Props> = function ({
+  sendDataToParent,
+}) {
   let [progress, chprogress] = useContext(context);
+  let [curtotal, chtotal] = useState(0);
   let [a, cha] = useState(0);
   let [b, chb] = useState(0);
   let [c, chc] = useState(0);
+  function az() {
+    sendDataToParent(curtotal);
+  }
   return (
     <div className={styles.component}>
       <div className={styles.headers}>
@@ -27,8 +37,10 @@ export default function component2() {
           onClick={() => {
             if (a == 1) {
               cha(0);
+              chtotal(curtotal - 9);
             } else {
               cha(1);
+              chtotal(curtotal + 9);
             }
           }}
           tabIndex={1}
@@ -41,8 +53,10 @@ export default function component2() {
           onClick={() => {
             if (b == 1) {
               chb(0);
+              chtotal(curtotal - 12);
             } else {
               chb(1);
+              chtotal(curtotal + 12);
             }
           }}
           tabIndex={2}
@@ -58,8 +72,10 @@ export default function component2() {
           onClick={() => {
             if (c == 1) {
               chc(0);
+              chtotal(curtotal - 15);
             } else {
               chc(1);
+              chtotal(curtotal + 15);
             }
           }}
           className={`${styles.selection} ${
@@ -92,6 +108,7 @@ export default function component2() {
           className={styles.next}
           onClick={() => {
             chprogress('3');
+            az();
           }}
         >
           Next Step
@@ -99,4 +116,4 @@ export default function component2() {
       </div>
     </div>
   );
-}
+};

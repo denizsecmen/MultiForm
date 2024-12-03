@@ -6,6 +6,36 @@
   font-family: 'Ubuntu-Light';
   src: url('../../../fonts/Ubuntu-Light.ttf');
 }
+@media screen and (max-width: 700px) {
+  .progressSign {
+    width: 100% !important;
+    height: 100px !important;
+    border-radius: 0px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+  }
+  .stepbox {
+    width: 50px !important;
+    height: 50px !important;
+    margin-right: 0px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-self: center !important;
+  }
+  .circle {
+    margin-right: 0px !important;
+  }
+  .infos {
+    display: none !important;
+  }
+  .step {
+    display: none !important;
+  }
+}
 .progressSign {
   height: 60%;
   display: flex;

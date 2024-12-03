@@ -45,7 +45,9 @@ export default function Home() {
             <div className={styles.progress}>
               <Progress />
             </div>
-            <div className={styles.main}>{changeMain(val)}</div>
+            <div className={styles.mobileform}>
+              <div className={styles.main}>{changeMain(val)}</div>
+            </div>
           </div>
         </div>
       </context.Provider>

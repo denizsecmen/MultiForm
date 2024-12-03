@@ -5,10 +5,12 @@ import { useContext, useReducer, useState } from 'react';
 type State = [boolean, boolean, boolean];
 type Action = { type: number };
 interface Component3Props {
-  sendDataToParent: (data: number) => void; // Expecting a number to be sent to the parent
+  sendDataToParent: (data: number) => void;
+  tt: number; // Expecting a number to be sent to the parent
 }
 
 export const component3: React.FC<Component3Props> = function ({
+  tt,
   sendDataToParent,
 }) {
   function changer(stat: State, action: Action): State {
@@ -101,7 +103,13 @@ export const component3: React.FC<Component3Props> = function ({
         </div>
       </div>
       <div className={styles.buttons}>
-        <button className={styles.back} onClick={() => chprogress('2')}>
+        <button
+          className={styles.back}
+          onClick={() => {
+            sendDataToParent(-tt);
+            chprogress('2');
+          }}
+        >
           Go Back
         </button>
         <button

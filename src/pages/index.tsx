@@ -20,7 +20,7 @@ export default function Home() {
     } else if (val == '2') {
       return <Component2 sendDataToParent={totalcalc} />;
     } else if (val == '3') {
-      return <Component3 sendDataToParent={totalcalc} />;
+      return <Component3 sendDataToParent={(tt, totalcalc)} />;
     } else if (val == '4') {
       return <Component4 cost={tt} />;
     } else {

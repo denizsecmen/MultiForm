@@ -9,7 +9,7 @@ import {
   useContext,
 } from 'react';
 interface Component4Props {
-  cost: number; // Expecting a number to be sent to the parent
+  cost: number;
 }
 export const component4: React.FC<Component4Props> = function component4({
   cost,

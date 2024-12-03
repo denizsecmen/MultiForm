@@ -19,15 +19,21 @@
   display: flex;
   justify-content: space-between;
 }
+.totalcost {
+  display: flex;
+  justify-content: space-between;
+  font-weight: lighter;
+}
 .next {
   width: 120px;
   height: 40px;
   border-radius: 5px;
   margin-right: 0%;
-  background-color: hsl(213, 96%, 18%);
+  background-color: hsl(243, 100%, 62%);
   color: white;
   font-family: 'Ubuntu';
   border-radius: 5px;
+  border: 0px;
 }
 .back {
   background-color: white;

@@ -24,7 +24,10 @@ export const component4: React.FC<Component4Props> = function component4({
           Double-check everything looks OK before confirming.
         </div>
       </div>
-      <div className={styles.totalcost}>{cost}</div>
+      <div className={styles.totalcost}>
+        <div>Total Cost:</div>
+        <div>{cost}$</div>
+      </div>
       <div className={styles.buttons}>
         <button
           className={styles.back}
@@ -40,7 +43,7 @@ export const component4: React.FC<Component4Props> = function component4({
             chprogress('5');
           }}
         >
-          Next Step
+          Confirm
         </button>
       </div>
     </div>

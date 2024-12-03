@@ -11,8 +11,12 @@ import { useState } from 'react';
 export default function Home() {
   let [val, chval] = useState('1');
   let [tt, chtt] = useState(0);
-  function totalcalc(data: number) {
-    chtt(tt + data);
+  function totalcalc(data: number | string) {
+    if (typeof data == 'string') {
+      chtt(0);
+    } else {
+      chtt(tt + data);
+    }
   }
   function changeMain(order: String) {
     if (val == '1') {
@@ -20,7 +24,7 @@ export default function Home() {
     } else if (val == '2') {
       return <Component2 sendDataToParent={totalcalc} />;
     } else if (val == '3') {
-      return <Component3 sendDataToParent={(tt, totalcalc)} />;
+      return <Component3 sendDataToParent={totalcalc} />;
     } else if (val == '4') {
       return <Component4 cost={tt} />;
     } else {

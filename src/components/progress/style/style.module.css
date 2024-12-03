@@ -9,7 +9,7 @@
 @media screen and (max-width: 700px) {
   .progressSign {
     width: 100% !important;
-    height: 100px !important;
+    height: 180px !important;
     border-radius: 0px !important;
     display: flex !important;
     flex-direction: row !important;
@@ -17,6 +17,8 @@
     align-items: center !important;
     margin-right: 0px !important;
     margin-left: 0px !important;
+    position: absolute !important;
+    top: 0px !important;
   }
   .stepbox {
     width: 50px !important;
